@@ -1,0 +1,16 @@
+{
+  "name": "Create A Spark",
+  "short_name": "CAS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f18",
+  "theme_color": "#0a0f18",
+  "icons": [
+    {
+      "src": "assets/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
