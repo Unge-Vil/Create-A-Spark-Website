@@ -1,0 +1,32 @@
+:root{
+  --bg:#0a0f18;
+  --card:#0f1726;
+  --text:#e6eefc;
+  --muted:#a7b3c8;
+  --brand:#ffb03a;
+  --brand2:#ff6a00;
+  --accent:#5ec8ff;
+  --radius:1.25rem;
+}
+body, .site, .entry, .entry-content{ background-color:var(--bg); color:var(--text); }
+.entry-content a,.wp-block a{ color:var(--accent); }
+.entry-content a:hover{ text-decoration:underline; }
+.entry-content h1,.entry-content h2,.entry-content h3,.wp-block h1,.wp-block h2,.wp-block h3{ color:#fff; line-height:1.1; }
+.entry-content p,.wp-block-paragraph{ color:var(--muted); }
+.wp-block-button .wp-block-button__link,.wp-element-button,.kb-advanced-btn a,.kadence-blocks-button,.kadence-blocks-button__link{
+  background:linear-gradient(90deg,var(--brand),var(--brand2)); color:#0b0e15!important;border-radius:12px;border:none;font-weight:700;padding:12px 18px;
+}
+.wp-block-group,.wp-block-cover,.wp-block-pullquote,.kb-row-layout-wrap,.kb-accordion,.kb-tabs,.kb-posts,.kb-gallery-wrap,.kadence-advancedheading,.kb-table-of-contents{
+  background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.0)),var(--card);
+  border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+.wp-block-group:not([class*="has-padding"]){ padding:24px; }
+.wp-block-columns{ gap:28px }
+.wp-block-image img{ border-radius:12px }
+.wp-block-cover__background{ opacity:.5 }
+.entry-content ul li,.entry-content ol li{ color:var(--muted) }
+.wp-block-table table{ width:100%;border-collapse:collapse;overflow:hidden;border-radius:12px;background:var(--card);border:1px solid rgba(255,255,255,0.06) }
+.wp-block-table th,.wp-block-table td{ padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.06) }
+input,textarea,select{ background:#0c1220;color:var(--text);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px }
+input::placeholder,textarea::placeholder{ color:#7e8aa3 }
+.cas-card{ background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.0)),var(--card)!important;border:1px solid rgba(255,255,255,0.06)!important;border-radius:var(--radius)!important;box-shadow:0 8px 30px rgba(0,0,0,.35)!important;padding:24px }
