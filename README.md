@@ -97,3 +97,19 @@ When you're ready to add a blog:
 ## License
 
 MIT © Unge Vil / Create A Spark
+
+
+## Shared hosting deployment (Apache/PHP)
+
+- Upload all files to your web root via SFTP or your hosting panel.
+- Keep the provided **.htaccess** for compression, caching and basic headers.
+- If you’ll embed a blog feed later:
+  - Use `rss-proxy.php` to safely fetch RSS → JSON (CORS‑friendly).
+  - Edit the `$allow` array in `rss-proxy.php` to include your blog feed URL.
+  - Unhide the `#news` section in `index.html` and call `loadRSS('/rss-proxy.php?src=YOUR_FEED')`.
+
+## Content model for this info‑only site
+
+- Single‑page sections: **About**, **Programs**, **Approach**, **Impact**, **FAQ**.
+- English only. No forms/newsletter/signups.
+- Future: add a blog feed block when ready.
